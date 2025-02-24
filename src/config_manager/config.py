@@ -1,4 +1,3 @@
-# File: src/config_manager/config.py
 import os
 import json
 import yaml
