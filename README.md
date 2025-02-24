@@ -48,7 +48,7 @@ print("Database Port:", db_port)
 
 ### Example 2: Using Environment Variables
 
-Set environment variables before running your code. For example, on Windows Command Prompt:
+Set environment variables before running code. For example, on Windows Command Prompt:
 
 ```cmd
 set APP_DB_HOST=env_host
@@ -69,7 +69,6 @@ print("Environment DB Port:", config.get("db.port"))
 
 ### Example 3: Configuration Files
 
-Create configuration files in JSON or YAML and store them under `src/config_manager/configs/`.
 
 #### JSON Example (`src/config_manager/configs/config.json`)
 
@@ -90,7 +89,7 @@ database:
   port: 3307
 ```
 
-Test merging these configurations with in-code dictionaries:
+Test merging configurations with in-code dictionaries:
 
 ```python
 config = ConfigManager()
