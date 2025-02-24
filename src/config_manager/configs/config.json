@@ -1,0 +1,6 @@
+{
+    "database": {
+        "host": "json_host",
+        "port": 3306
+    }
+}

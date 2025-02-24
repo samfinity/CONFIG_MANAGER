@@ -1,0 +1,31 @@
+Metadata-Version: 2.2
+Name: config_manager
+Version: 0.1.0
+Summary: Advanced configuration manager with multiple source support
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Configuration Manager
+
+Advanced Python configuration manager with support for multiple sources.
+
+## Features
+
+- Load from multiple sources (JSON files, environment variables, Python dicts)
+- Priority-based merging
+- JSON Schema validation
+- Dot-notation access
+- Extensible loader system
+
+## Installation
+
+```bash
+pip install config-manager
