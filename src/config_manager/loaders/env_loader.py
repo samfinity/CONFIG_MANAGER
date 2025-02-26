@@ -1,6 +1,6 @@
 import os
 import logging
-from typing import Dict, Any, Union  # Add Union import here
+from typing import Dict, Any, Union  
 from .base_loader import BaseLoader
 
 logger = logging.getLogger(__name__)
@@ -12,11 +12,11 @@ class EnvLoader(BaseLoader):
         self.prefix = source
         
     @classmethod
-    def can_load(cls, source: Union[str, dict]) -> bool:  # Now properly imported
+    def can_load(cls, source: Union[str, dict]) -> bool:  
         return isinstance(source, str) and source.startswith('env://')
         
     def load(self) -> Dict[str, Any]:
-        prefix = self.prefix[6:]  # Remove 'env://'
+        prefix = self.prefix[6:] 
         config = {}
         
         for key, value in os.environ.items():
